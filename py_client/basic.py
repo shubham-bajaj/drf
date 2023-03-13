@@ -1,6 +1,8 @@
 import requests
+import socket
 # endpoint ="http://httpbin.org/status/200/"
 # endpoint = "http://httpbin.org/anything"
+# print(socket.getaddrinfo('localhost', 8080))
 endpoint  ="http://localhost:7000/api/"
 
 get_response = requests.get(endpoint,params={'abc':123},json={'query':'hello world'}) #HTTP Request
